@@ -1,0 +1,306 @@
+/* Basic fonts and layout */
+
+
+h1,h2,h3 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 22px;
+}
+
+h2 {
+    color: #4aaaa5;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3 {
+    color: #777777;
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgrey;
+    background-image: url("../images/concrete-texture.png")
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+/* HEADER */
+
+header {
+    padding-top: 30px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #cccccc;
+}
+
+.headerinternal {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nametag {
+    color: #ffffff;
+    background-color: #4aaaa5;
+    width: 220px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 2px #4aaaa5;
+}
+
+.headerlinks {
+    float:right;
+    position: relative;
+    top: -40px;
+}
+
+
+.headerlinkstyle {
+    color: #777777;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.link1,.link2,.link3 {
+    display: inline;
+}
+
+.link1 {
+    padding-right: 10px;
+    border-right: 1px solid #cccccc;
+}
+
+.link2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #cccccc;
+}
+
+.link3 {
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+
+/* Main sections */
+
+.main {
+    clear: both;
+    margin-top: 30px;
+    width: 920px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right:20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+}
+
+.content {
+    padding-top: 20px;
+    margin-top: 30px;
+    padding-bottom: 15px;
+    color: #777777; 
+    border-top: 3px solid #cccccc;
+    overflow: auto;
+}
+
+
+
+footer {
+    height: 30px;
+    margin-top: 70px;
+    padding-top: 15px;
+    text-align: center;
+    border-top: 5px solid #4aaaa5;
+    background-color: #666666;
+    color: #ffffff;
+    clear: both;
+}
+
+
+
+.form1 {
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+
+
+/* Portfolio Content */
+
+.portlabel {
+    height: 35px;
+    background-color: #4aaaa5;
+    text-align: center;
+    position:relative;
+    bottom: 45px;
+    color: #ffffff;
+    width: 180px;
+    padding-top: 2px;
+    font-weight: bold;
+}
+
+.portleft {
+    float: left;
+}
+
+.portright {
+float: left;
+margin-left: 50px;
+}
+
+.row2 {
+    clear: both;
+}
+
+
+/* Images*/
+
+
+
+img {
+    height: 150px;
+    length: 200px;
+}
+
+.image1 {
+    float:left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+/* Pseudo-classes */
+
+a:hover {
+    color: #4aaaa5;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* Media Queries 980 */
+
+@media (max-width: 980px) {
+    
+
+    .main {
+        width: 600px;
+        margin-left: 50px;
+         }
+
+
+    .headerlinks{
+        position: relative;
+        right: 200px;
+    }       
+}
+
+/* Media Queries 768 */
+
+
+@media screen and (max-width: 768px) {
+    
+
+    .main {
+        width: 450px;
+        margin-left: 50px;
+         }
+
+
+    .headerlinks{
+        position: relative;
+        right: 300px;
+    }       
+
+
+
+
+}
+
+
+/* Media Queries 640 */
+
+
+@media (max-width: 640px) {
+    
+    body {
+        width: 100%
+    }
+
+
+    .headerinternal {
+        width: 100vw;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .nametag {
+        width: 100vw;
+        float: none;
+           }
+
+
+    .headerlinks {
+        float: none;
+        position: static;
+        padding: 6px;
+        margin: auto;
+        width: 100%;
+        
+    }
+    
+    .headerlinkstyle {
+        font-size:18px;
+    }
+
+    .main {
+        width: 70vw;
+        margin: auto;
+        overflow: none;
+        clear: all;
+        position: relative;
+        top: 10px;
+        overflow: hidden;
+
+    }
+
+    .content {
+        overflow: hidden;
+    }
+
+    .image1 {
+        float: none;
+    }
+
+
+    .portleft {
+        float: none;
+        margin: auto;
+    }
+    
+    .portright {
+    float: none;
+    margin: auto;
+
+    }
+
+
+    .form1 {
+        overflow: hidden;
+    }
+
+
+}
